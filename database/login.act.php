@@ -10,6 +10,8 @@
     if($cliente->num_rows == 1){
         $cliente = mysqli_fetch_assoc($cliente);
         $senha_digitada = md5($senha);
+
+
         if($senha_digitada == $cliente['Senha']){
             $_SESSION['logado'] = true;
             $_SESSION['nome'] = $cliente['Nome'];
@@ -17,16 +19,16 @@
             $_SESSION['foto'] = $cliente['Foto'];
             $_SESSION['cep'] = $cliente['Cep'];
             $_SESSION['nivel'] = $cliente['nivel'];
-            $destino = "location:index.php";
+            $destino = "location:../pages/index.php";
         }
         else{
-            $msg = "<p class=red>Falha ao iniciar a sessão</p>";
-            $destino = "location:login.php";
+            $msg = "<p class=red>Usuário ou senha incorreto</p>";
+            $destino = "location:../pages/login.php";
         }
     }
     else{
         $msg = "<p class=red>Falha ao iniciar a sessão</p>";
-        $destino = "location:login.php";
+        $destino = "location:../pages/login.php";
     }
     
    header($destino);

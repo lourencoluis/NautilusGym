@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5vw;
+    width: 100%;
+    background-color: black;   
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+
+}
+
+.menu{
+    height: 100%;
+    width: 60%;
+
+}
+
+.user{
+    color: white;
+    gap: 20px;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}

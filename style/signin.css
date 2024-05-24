@@ -1,0 +1,128 @@
+:root{
+    /*azul*/
+    --azul-preto: #000814;
+    --escuro: #023E8A;
+    --marinho: #00B4D8;
+    --bebe: #ADE8F4;
+    --azul-branco:#FEFCFB;
+
+    /*vermemlho*/
+    --vermelho-preto: #3A0902;
+    --vinho:#821415;
+    --ruby:#E40B0B;
+    --cereja:#F9626C;
+    --vermelho-branco:#F3F3F3;
+
+    /*verde*/
+    --verde-preto:#020202;
+    --floresta:#04471C;
+    --lima:#6bd425;
+    --jade:#68D89B;
+    --verde-branco:#FEFEE3;
+}
+/*se leu é gay*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    width: 100%;
+    background-color: black;   
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.container{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #e9ecef;
+    height: 40vw;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.banner{
+    width: 35%;
+    height: 100%;
+    background-color: black;
+
+}
+
+.login{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    width: 100%;
+}
+
+.principal{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rodape{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: black;
+    color: #fff;
+    height: 4vw;
+    width: 7vw;
+}
+
+.valid{
+    border: solid 2px green;
+    
+}
+
+.invalid{
+    border: solid 2px red;
+}
+
+.info{
+    color: #d32e2e;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 100%;
+    background-color: black;  
+}
