@@ -30,6 +30,10 @@ nav{
 }
 
 .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     color: white;
     gap: 20px;
     height: 100%;

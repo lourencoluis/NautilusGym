@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./libs/Mask-Plugin/src/jquery.mask.js"></script>
+    <script src="../libs/jquery.js"></script>
+    <script src="../libs/Mask-Plugin/src/jquery.mask.js"></script>
     <link rel="stylesheet" href="../style/signin.css">
     <title>Document</title>
 </head>
