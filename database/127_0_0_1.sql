@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 15-Maio-2024 às 17:57
+-- Tempo de geração: 24-Maio-2024 às 20:35
 -- Versão do servidor: 8.0.27
 -- versão do PHP: 7.4.26
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `bd_clientes`
 --
+CREATE DATABASE IF NOT EXISTS `bd_clientes` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `bd_clientes`;
 
 -- --------------------------------------------------------
 
@@ -65,16 +67,16 @@ INSERT INTO `tb_clientes` (`codigo`, `nome`, `email`, `telefone`, `nascto`, `fot
 DROP TABLE IF EXISTS `tb_users`;
 CREATE TABLE IF NOT EXISTS `tb_users` (
   `Coduser` int NOT NULL AUTO_INCREMENT,
-  `Nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `Email` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `Senha` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `Nome` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Email` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Senha` varchar(60) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Data` date NOT NULL,
-  `Telefone` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `Telefone` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Cep` int NOT NULL,
-  `Foto` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `Foto` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `nivel` int NOT NULL,
   PRIMARY KEY (`Coduser`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_users`
@@ -82,8 +84,30 @@ CREATE TABLE IF NOT EXISTS `tb_users` (
 
 INSERT INTO `tb_users` (`Coduser`, `Nome`, `Email`, `Senha`, `Data`, `Telefone`, `Cep`, `Foto`, `nivel`) VALUES
 (1, 'Alison Arruda de Oliveira', 'Alisonoliveira0116@gmail.com', 'alison123', '2003-01-16', '11960706320', 8345560, '', 3),
-(2, 'Luís Henrique Lourenço', 'hicklourenco@gmail.com', 'luis123', '2006-04-22', '11991220435', 8253540, '', 3),
-(3, 'Filipe Takara', 'filipereidelas@gmail.com', 'filipe123', '2006-07-26', '11963256126', 0, '', 3);
+(3, 'Filipe Takara', 'filipereidelas@gmail.com', 'filipe123', '2006-07-26', '11963256126', 0, '', 3),
+(5, 'Filipe Takara', 'kenititakara@gmail.com', 'acacbabe477e92db71788243b06347', '2006-07-27', '11963256126', 456468545, 'https://api.dicebear.com/8.x/initials/svg?seed=Fil', 1),
+(9, 'Luis Lourenço', 'hicklourenco@gmail.com', '3a8b38402b2703b93fcc4925901141e6', '2006-04-22', '11991220435', 8253540, 'https://api.dicebear.com/8.x/initials/svg?seed=Lui', 3),
+(10, 'João Lima', 'joao@gmail.com', '202cb962ac59075b964b07152d234b70', '1981-03-03', '11', 123321123, 'https://api.dicebear.com/8.x/initials/svg?seed=Joã', 1),
+(17, 'Filipe Takara', 'lala@gmail.gg.com', '4b07f4d92f3dfc0b1c478bcdcfe626a8', '2024-05-08', '11478456987', 0, 'https://api.dicebear.com/8.x/initials/svg?seed=Fil', 2);
+--
+-- Banco de dados: `teste`
+--
+CREATE DATABASE IF NOT EXISTS `teste` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `teste`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `departamento`
+--
+
+DROP TABLE IF EXISTS `departamento`;
+CREATE TABLE IF NOT EXISTS `departamento` (
+  `cod_dep` int NOT NULL AUTO_INCREMENT,
+  `descr` varchar(40) NOT NULL,
+  `localiz` varchar(30) NOT NULL,
+  PRIMARY KEY (`cod_dep`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
