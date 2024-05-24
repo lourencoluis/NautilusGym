@@ -18,6 +18,7 @@ nav{
 }
 
 .logo{
+    background-color: aqua;
     width: 20%;
     height: 100%;
 
@@ -26,14 +27,15 @@ nav{
 .menu{
     height: 100%;
     width: 60%;
-
-}
-
-.user{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+}
+
+.user{
+
     color: white;
     gap: 20px;
     height: 100%;

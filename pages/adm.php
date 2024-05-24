@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="../libs/jquery.js"></script>
+    <script src="../libs/Mask-Plugin/src/jquery.mask.js"></script>
     <link rel="stylesheet" href="../style/signin.css">
     <title>Document</title>
 </head>
@@ -28,10 +29,10 @@
                         <input type="date" name="data">
 
                         <label for="telefone">Telefone:</label>
-                        <input type="number" name="telefone">
+                        <input type="tel" name="telefone" id="txtTelefone">
 
                         <label for="cpf">CPF:</label>
-                        <input type="number" name="cpf">
+                        <input type="text" name="cpf" id="txtCpf">
                         
                     </div>
                     <div class="rodape">
@@ -52,6 +53,6 @@
     <footer>
     </footer>
     
-    <script src="../aps/singin.js"></script>
+    <script src="../aps/signin.js"></script>
 </body>
 </html>

@@ -35,10 +35,10 @@
                         <input type="date" name="data">
 
                         <label for="telefone">Telefone:</label>
-                        <input type="number" name="telefone">
+                        <input type="tel" name="telefone" id="txtTelefone">
                         
                         <label for="cep">CEP:</label>
-                        <input type="number" name="cep">
+                        <input type="text" name="cep" id="txtCep">
 
                     </div>
                     <div class="rodape">

@@ -8,16 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        if (isset($_SESSION['login']) && $_SESSION['login'] == truel) {
-            unset( $_SESSION['logado']);
-            unset( $_SESSION['nome']);
-            unset( $_SESSION['codigo']);
-            unset( $_SESSION['foto']);
-            unset( $_SESSION['cep']);
-            unset($_SESSION['nivel']);  
-        }
-    ?>
+    
     <nav></nav>
     <main>
         <div class="container">

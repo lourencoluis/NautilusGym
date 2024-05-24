@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    require("../database/sec.php");
+        require("../database/sec.php");
     ?>
     <nav>
     <div class="logo">
@@ -18,7 +18,7 @@
             <?php
                 require("../database/level.php");
             ?>
-            <li><a href='../pages/login.php'><input type='button' value='Sair'></a></li>
+            <li><a href='../pages/logoff.php'><input type='button' value='Sair'></a></li>
             <li></li>
             <li></li>
             <li></li>
