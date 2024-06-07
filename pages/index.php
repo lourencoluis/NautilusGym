@@ -18,10 +18,7 @@
             <?php
                 require("../database/level.php");
             ?>
-            <li><a href='../pages/logoff.php'><input type='button' value='Sair'></a></li>
-            <li></li>
-            <li></li>
-            <li></li>
+                <li><a href='../pages/logoff.php'>Sair</a></li>
         </ul>
         <div class="user">
             <h1>
